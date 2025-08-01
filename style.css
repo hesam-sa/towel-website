@@ -17,28 +17,18 @@ ul {
   justify-content: flex-start;
   list-style-type: none;
   background-color: #ffffff;
-
-  /* فیکس و کمی پایین */
   position: fixed;
   top: 40px;
-  /* این مقدار رو کم یا زیاد کن برای فاصله از بالا */
   left: 0;
   right: 0;
-
   height: 60px;
   padding: 0 30px;
-
-  /* بوردر اضافه شده */
   border: 1px solid #ccc;
   border-radius: 30px;
-
-  /* سایه اختیاری */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
   margin: 0 auto;
   width: 95%;
   z-index: 999;
-  /* مطمئن شو روی همه چیز باشه */
 }
 
 ul h1 {
@@ -77,6 +67,7 @@ li a:hover:not(.active) {
 
 /* Style the footer */
 .footer {
+  margin: 20px;
   background-color: #f1f1f1;
   padding: 10px;
 }
@@ -183,22 +174,22 @@ li a:hover:not(.active) {
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 20px;
   padding: 20px;
-  height: 600px;
+  height: 800px;
 
 }
 
 .product-card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   padding-bottom: 20px;
+  height: 700px;
 }
 
 .product-card img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   width: 100%;
-  height:100%;
+  height:80%;
   object-fit: cover;
 }
 
@@ -248,4 +239,73 @@ li a:hover:not(.active) {
 .title button:hover {
   background-color: #444;
   color: white;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.Category-gride {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* برای مرکز قرار گرفتن محتوای اصلی */
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category-card img {
+
+  width: 95%;
+  height: 80%;  /* حدود 60% ارتفاع کارت */
+  object-fit: cover;
+  border-radius: 16px;
+  
+}
+
+
+
+.category-card button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: gray;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.category-card:nth-child(1):hover {
+  background-color: #ff9a9e;
+}
+.category-card:nth-child(2):hover {
+  background-color: #fad0c4;
+}
+.category-card:nth-child(3):hover {
+  background-color: #fbc2eb;
 }
