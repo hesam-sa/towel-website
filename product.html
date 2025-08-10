@@ -14,21 +14,26 @@
 
 <body>
   <!-- navbar  -->
-  <ul id="navbar">
-    <li>
+    <nav id="navbar">
       <h1>حوله شرق</h1>
-    </li>
-    <li><a href="index.html">صفحه اصلی</a></li>
-    <li><a href="product.html">محصولات</a></li>
-    <li><a href="final-product.html">خرید</a></li>
-    <li><a href="index.html#banner">درباره ما</a></li>
-    <li class="search-bar">
-      <form action="/search" method="get">
-        <input type="text" placeholder="Search..." name="q" />
-        <button type="submit">🔍</button>
-      </form>
-    </li>
-  </ul>
+
+      <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
+
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="product.html">محصولات</a></li>
+        <li><a href="final-product.html">خرید</a></li>
+        <li><a href="#banner">درباره ما</a></li>
+      </ul>
+
+      <div class="search-bar">
+        <form action="/search" method="get">
+          <input type="text" placeholder="جستجو..." name="q" />
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+    </nav>
 
   <div class="page-content">
     <div class="category-type">
@@ -112,21 +117,27 @@
 
       <!-- کارت ۲ -->
       <div class="product-card">
-        <img src="media/img6.jpg" alt="محصول 2">
+        <a href="final-product.html">
+          <img src="media/img6.jpg" alt="محصول 1">
+        </a>
         <h3>حوله بچه‌گانه</h3>
         <p>95,000 تومان</p>
         <button>افزودن به سبد خرید</button>
       </div>
       <!-- کارت 3 -->
       <div class="product-card">
-        <img src="media/img4.jpg" alt="محصول 3">
+        <a href="final-product.html">
+          <img src="media/img4.jpg" alt="محصول 1">
+        </a>
         <h3>حوله پالتویی</h3>
         <p>95,000 تومان</p>
         <button>افزودن به سبد خرید</button>
       </div>
       <!-- کارت 4 -->
       <div class="product-card">
-        <img src="media/img3.jpg" alt="محصول 4">
+        <a href="final-product.html">
+          <img src="media/img7.jpg" alt="محصول 1">
+        </a>
         <h3>حوله طرح سارا</h3>
         <p>95,000 تومان</p>
         <button>افزودن به سبد خرید</button>

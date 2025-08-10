@@ -13,22 +13,26 @@
 
 <body>
   <div>
-    <ul id="navbar">
-      <li>
-        <h1>حوله شرق</h1>
-      </li>
-      <li><a href="index.html">صفحه اصلی</a></li>
-      <li><a href="product.html">محصولات</a></li>
-      <li><a href="final-product.html">خرید</a></li>
-      <li><a href="#banner">درباره ما</a></li>
-      <li class="search-bar">
+    <nav id="navbar">
+      <h1>حوله شرق</h1>
+
+      <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+
+
+      <ul>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="product.html">محصولات</a></li>
+        <li><a href="final-product.html">خرید</a></li>
+        <li><a href="#banner">درباره ما</a></li>
+      </ul>
+
+      <div class="search-bar">
         <form action="/search" method="get">
-          <input type="text" placeholder="Search..." name="q" />
+          <input type="text" placeholder="جستجو..." name="q" />
           <button type="submit">🔍</button>
         </form>
-      </li>
-    </ul>
-
+      </div>
+    </nav>
 
 
     <div class="slider-content">
@@ -155,7 +159,9 @@
 
   </div>
 
+
   <script src="script.js"></script>
+
 </body>
 
 </html>

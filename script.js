@@ -92,3 +92,14 @@ acc.forEach(button => {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleButton = document.getElementById("menu-toggle");
+  const menu = document.querySelector("#navbar ul");
+
+  toggleButton.addEventListener("click", function() {
+    menu.classList.toggle("show");
+  });
+});
