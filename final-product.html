@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <title>محصول نهایی</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <ul id="navbar">
+        <li>
+            <h1>حوله شرق</h1>
+        </li>
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="product.html">محصولات</a></li>
+        <li><a href="final-product.html">خرید</a></li>
+        <li><a href="index.html#banner">درباره ما</a></li>
+        <li class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Search..." name="q" />
+                <button type="submit">🔍</button>
+            </form>
+        </li>
+    </ul>
+
+    <div class="product-page-content">
+        <div class="product-img">
+            <img src="media/img7.jpg">
+        </div>
+        <div class="product-details">
+            <h3>حوله پالتویی طرح لاوین</h3>
+            <hr>
+            <p>95/000 تومان</p>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                کاربردها</p>
+            <div class="quantity">
+                <button onclick="decrease()">−</button>
+                <span id="count">1</span>
+                <button onclick="increase()">+</button>
+            </div>
+            <div class="buy-buttons">
+                <button class="normal-button">اضافه به سبد</button>
+                <button class="normal-button">خرید فوری</button>
+                <button class="heart-button">&#x2764</button>
+            </div>
+            <div class="accordion">اطلاعات محصول</div>
+            <div class="panel">
+                <p>>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردها</p>
+            </div>
+
+            <div class="accordion">سیاست بازگشت و بازپرداخت</div>
+            <div class="panel">
+                <p>Return and refund policy details...</p>
+            </div>
+
+            <div class="accordion">اطلاعات حمل و نقل</div>
+            <div class="panel">
+                <p>Shipping information goes here...</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>حوله شرق</h2>
+                <p>زیبایی، اعتماد به نفس، فردیت</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">درباره ما</a>
+                <a href="#">خدمات</a>
+                <a href="#">تماس با ما</a>
+                <a href="#">سوالات متداول</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i> اینستاگرام</a>
+                <a href="#"><i class="fab fa-telegram"></i> تلگرام</a>
+                <a href="#"><i class="fab fa-linkedin"></i> لینکدین</a>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+
+</body>
+<script>
+    
+</script>
+
+</html>
