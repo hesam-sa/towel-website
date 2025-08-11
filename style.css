@@ -144,12 +144,22 @@ body {
   h1 {
     order: 1;
   }
+
+  .title p {
+    font-size: medium;
+  }
+  
+  .title button {
+    font-size: small;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-  #navbar ul {
-    width: 60%;
+@media (max-width: 400px) {
+  .search-bar button {
+
+    display: none;
   }
+ 
 }
 
 /* slid */
@@ -771,4 +781,3 @@ body {
     margin: 10px 0;
 
   }
-
